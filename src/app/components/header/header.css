@@ -6,7 +6,9 @@
 }
 
 header {    
-    padding: 20px 2%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;   
     position: fixed;
     width: 100%;
     top: 0; 
@@ -22,14 +24,6 @@ header.show {
     padding: 0px 0%;
     border-radius: 0%;
 }
-header.show .nav-links a,
-header.show button {
-    color: black;
-}
-
-header.show .nav-links a:hover {
-    color: #ffd700;
-}
 
 header.show .app-menu-desktop {
     border-radius: 0%;
@@ -40,10 +34,10 @@ header.show .app-menu-desktop {
     width: 100px;
 } 
 
-
-li, a, button { /*Estilo geral dos elementos de texto*/
+/*Estilo geral dos elementos de texto*/
+li, a, button { 
     font-size: 20px;
-    color: white;
+    color: rgb(0, 68, 85);
     text-decoration: none;
 }
 
@@ -51,8 +45,8 @@ li, a, button { /*Estilo geral dos elementos de texto*/
     display: flex;
     justify-content: space-between; /*Espaço entre os elementos*/
     align-items: center; /*Vertical*/
-    padding: 20px 2%; /*20 em cima e em baixo, 15 nas laterais*/
-    background-color: rgba(255, 255, 255, 0.137);
+    padding: 15px 4%; 
+    background-color: rgb(255, 255, 255);
     /*box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;*/
     border-radius: 60px;
 }
@@ -69,16 +63,15 @@ li, a, button { /*Estilo geral dos elementos de texto*/
 
 /*Estilo do efeito*/
 ul li a {
+    border-bottom: 1px solid  rgb(84, 139, 153);
     padding: 8px 16px; /*Espaçamento interno*/
     position: relative; 
     transition: all 0.4s ease;
-    font-weight: 500;
-    letter-spacing: 1px;
+    
 }
 
 .nav-links li a:hover {
-    background-color:rgba(10, 6, 6, 0.253);
-    color: #ffd700;
+    background-color:rgba(0, 68, 85, 0.192);
 }
 
 ul li a::before, ul li a::after {  /*Bordas decorativas*/
@@ -86,7 +79,7 @@ ul li a::before, ul li a::after {  /*Bordas decorativas*/
     position: absolute;
     width: 12px; 
     height: 12px;
-    border: 2px solid #ffd700;
+    border: 2px solid rgb(84, 139, 153);
     opacity: 0; /*Começa invisível*/
     transition: all 0.4s ease;
 }
@@ -117,24 +110,28 @@ ul li a:hover::after {
 }
 /*Fim do estilo do efeito*/
 
+.logo-web img {
+    width: 50px;
+}
+
 /*Estilo da button*/
 button {
     padding: 10px 20px;
-    background-color: #f1f1ed;
-    border: none;
+    background-color: #ffffff;
+    border: 1px solid rgb(84, 139, 153);
     cursor: pointer;
-    border-radius: 60px;
-    color: black;
-
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
-
+    color: rgb(0, 68, 85);
+    border-radius: 6px;
     transition: all 0.5s;
 
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 button:hover {
-    background-color: #ffd700;
-    transform: scale(1.1);
+
+    background-color: rgb(4, 46, 56);
+    color: white;
+    transform: scale(1.05);
 }
 /*Fim do estilo da button*/
 
