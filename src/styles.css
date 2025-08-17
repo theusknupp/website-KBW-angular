@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+ @keyframes slideIn {
+    0% {transform: translateX(-50%);}
+    100% {transform: translateX(0%);}
+    
+ }
+
+  @keyframes slideReverse {
+    0% {transform: translateX(50%);}
+    100% {transform: translateX(0%);}
+ }

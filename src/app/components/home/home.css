@@ -9,7 +9,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 75px;
+    padding-top: 80px;
+    min-height: 100vh;
 }
 
 .img-container {

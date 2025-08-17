@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sobre-nos {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 120px;
+    background-color:rgba(4, 46, 56, 0.123);
+}
+
+.sobre-nos .txt-sbr {
+    width: 40%;
+    height: 30%;
+    
+}
+
+.sobre-nos .txt-sbr p, .sobre-nos .txt-sbr h1  {
+    padding: 30px;
+    font-size: 26px;
+    text-align: justify;
+    color: rgb(4, 66, 80);
+
+    opacity: 0;
+}
+
+.sobre-nos .txt-sbr h1  {
+    color: rgb(8, 79, 97);
+}
+
+
+.img-sbr img{
+    width: 600px;
+    border-radius: 6px; 
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+    opacity: 0;
+}
+
+.sobre-nos.animate .img-sbr img {
+  animation: slideReverse 1.5s forwards;
+  opacity: 1; /* só visível quando animando */
+}
+
+.sobre-nos.animate .txt-sbr p, .sobre-nos.animate .txt-sbr h1 {
+  animation: slideIn 1.5s forwards;
+  opacity: 1; /* só visível quando animando */
+}
